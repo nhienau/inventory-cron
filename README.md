@@ -23,6 +23,13 @@ git clone https://github.com/nhienau/inventory-cron.git
 
 ```BASH
 cd inventory-cron
-npm install
-npm run start
+bun install
+bun run start
+```
+
+Build and run Docker container:
+
+```BASH
+docker build -t inventory-cron .
+docker run -d inventory-cron
 ```

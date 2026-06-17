@@ -30,6 +30,8 @@ FROM base AS release
 COPY --from=install /temp/prod/node_modules node_modules
 COPY --from=prerelease /usr/src/app/dist ./dist
 COPY --from=prerelease /usr/src/app/package.json .
+# also copy .env
+COPY --from=prerelease /usr/src/app/.env .
 
 # run the app
 USER bun

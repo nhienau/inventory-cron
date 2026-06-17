@@ -4,7 +4,10 @@ A Node.js cron server to run scheduled jobs for the inventory management system.
 
 ## Features
 
-- Save daily balances (by calling Next.js API route)
+Cron jobs: calling Next.js API route to
+
+- Save daily balances
+- Update public holidays
 
 ## Installation
 
